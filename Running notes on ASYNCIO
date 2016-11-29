@@ -10,7 +10,8 @@ Asyncio in python:
         or ->
             await foo()
         
-    =>  coroutine cannot run itself, we need to drive it from another function as run(below function) or use await foo().
+    =>  coroutine cannot run itself, we need to drive it from another function as run(below function) 
+        or use await foo() under async function only.
         def run(coro):
             try:
                 coro.send(None)
